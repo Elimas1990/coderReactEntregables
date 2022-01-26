@@ -11,7 +11,7 @@ const ItemList = ({nombre,precio,stock,img}) =>{
                         <h5 className="card-title">{nombre}</h5>
                         <p className="card-text">PRECIO: ${precio}</p>
                         <p className="card-text"><small className="text-muted">STOCK: {stock}</small></p>
-                        <p className="card-text"><ItemCount stock={stock}/></p>
+                        <p className="card-text"><ItemCount stock={stock} nombre={nombre} /></p>
                     </div>
                 </div>
             </div>
