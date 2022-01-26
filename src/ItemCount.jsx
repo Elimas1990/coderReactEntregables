@@ -17,7 +17,7 @@ const ItemCount = ({stock,nombre}) =>{
         <>
             <div className="input-group mb-3 w-100">
                 <button className="btn btn-outline-danger" type="button" id="button-menos" onClick={decrementar}>-</button>
-                <span class="input-group-text">{cantProducto}</span>
+                <span className="input-group-text">{cantProducto}</span>
                 <button className="btn btn-outline-success" type="button" id="button-mas" onClick={incrementar}>+</button>
             </div>
             <button className="btn btn-success" onClick={agregarAlCarrito}>Agregar al Carrito</button>
