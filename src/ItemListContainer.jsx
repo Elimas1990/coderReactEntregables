@@ -17,6 +17,7 @@ const ItemListContainer = ()=>{
             <div className="d-flex justify-content-center row row-cols-1 row-cols-md-4 row-cols-xl-4 g-4 m-4">
                 {
                     productos.map((item,index)=>{
+                        
                         return (<ItemList 
                         key={index}
                         id={item.id}

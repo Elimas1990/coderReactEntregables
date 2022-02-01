@@ -1,10 +1,10 @@
 import Item from "./Item"
 
 
-const ItemList = ({nombre,precio,stock,img}) =>{
+const ItemList = ({id,nombre,precio,stock,img}) =>{
     
     return(
-        <Item nombre={nombre} precio={precio} stock={stock} img={img}/>
+        <Item id={id} nombre={nombre} precio={precio} stock={stock} img={img}/>
     )
 }
 
