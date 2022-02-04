@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
+import Search from "./Search";
 
 
 const Navbar = (props) => {
@@ -22,6 +23,9 @@ const Navbar = (props) => {
                             </li>
                             <li className="nav-item">
                                 <Link to="/tipo_producto/juego-de-miniaturas" className="nav-link">Juego de miniaturas</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Search/>
                             </li>
                         </ul>
                         <ul className="navbar-nav">
