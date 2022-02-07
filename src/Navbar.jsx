@@ -27,10 +27,12 @@ const Navbar = (props) => {
                             <li className="nav-item">
                                 <Search/>
                             </li>
+          
                         </ul>
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <CartWidget/>
+                                <Link to="/cart"><CartWidget/></Link>
+                                
                             </li>
                         </ul>
                     </div>

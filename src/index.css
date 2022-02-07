@@ -48,3 +48,8 @@ code {
 .card-container:hover button {   
   opacity: 1;
 }
+
+.img-cart{
+  height: 30vh!important;
+  object-fit: contain!important;
+}
