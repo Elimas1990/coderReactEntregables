@@ -2,13 +2,14 @@ import { useContext, useEffect, useState } from "react"
 import CartItem from "./CartItem"
 import { CartContext } from "./context/CartContext"
 import customFetch from "./utils/CustomFetch"
+import firestoreFetch from "./utils/firebaseFetch"
 
 const Cart = () =>{
     const test = useContext(CartContext)
     const [productos,setProductos] = useState([])
     useEffect(()=>{
-        customFetch()
-            .then(result => setProductos(result))
+        firestoreFetch({})
+            .then(resultado=> setProductos(resultado))
             .catch(err => console.log(err))
     },[])
 

@@ -7,11 +7,9 @@ const Item = ({id,nombre,precio,stock,img}) =>{
     const test = useContext(CartContext)
     const onAdd = (cant) =>{
         
-
         test.addProducto(id,cant)
 
     }
-    
     return(
         
         <div className="col ">

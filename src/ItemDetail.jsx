@@ -1,8 +1,8 @@
-import ItemCount from "./ItemCount"
 
 
-const ItemDetail = ({nombre,precio,stock,img,tipo_juego}) =>{
-    
+
+const ItemDetail = ({nombre,precio,stock,img,juego,categoria}) =>{
+
     return(
         
      
@@ -12,11 +12,11 @@ const ItemDetail = ({nombre,precio,stock,img,tipo_juego}) =>{
                 <h5 className="card-title">{nombre}</h5>
                 <p className="card-text">PRECIO: ${precio}</p>
                 
-                <p className="card-text">Tipo juego: {tipo_juego.tipo}</p>
+                <p className="card-text">Tipo juego: {categoria}</p>
                 
-                <p className="card-text">Juego: {tipo_juego.nombre}</p>
+                <p className="card-text">Juego: {juego}</p>
                 <p className="card-text"><small className="text-muted">STOCK: {stock}</small></p>
-                <ItemCount/>
+       
             </div>
         </div>
       

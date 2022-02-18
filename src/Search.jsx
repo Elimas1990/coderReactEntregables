@@ -1,8 +1,8 @@
 const Search = () =>{
     const handleEvent = (e) =>{
         
-        if(e.key === '-') e.preventDefault()  /// Para validar caracteres
-        if('AEIOUaeiou'.includes(e.key)) e.preventDefault()  /// Para validar caracteres previene ingreso de vocales
+        //if(e.key === '-') e.preventDefault()  /// Para validar caracteres
+        //if('AEIOUaeiou'.includes(e.key)) e.preventDefault()  /// Para validar caracteres previene ingreso de vocales
     }
     return (
         <>

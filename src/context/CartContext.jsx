@@ -6,7 +6,6 @@ const CartContextProvider = ({children}) => {
 
     useEffect(() => {
         const cartData = JSON.parse(localStorage.getItem('carrito'))
-        
         if (cartData) {
             setProductos(cartData)
         }

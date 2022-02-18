@@ -12,8 +12,8 @@ const CartItem = ({producto,cant,limpiarArticulo}) =>{
                         <h5 className="card-title">{producto?.nombre}</h5>
                         <div className="row">
                             <div className="col">
-                                <p>Tipo de Juego: {producto?.tipo_juego.tipo}</p>
-                                <p>Juego: {producto?.tipo_juego.nombre}</p>
+                                <p>Tipo de Juego: {producto?.categoria}</p>
+                                <p>Juego: {producto?.juego}</p>
                                 <p>Precio unitario: {producto?.precio}</p>
                             </div>
                             <div className="col">
