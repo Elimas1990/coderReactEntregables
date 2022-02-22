@@ -1,4 +1,4 @@
-import { collection, connectFirestoreEmulator, getDoc, getDocs, query, where } from "firebase/firestore";
+import { collection, getDoc, getDocs, query, where } from "firebase/firestore";
 import { db } from './firebaseConf'
 
 const capitalize = s => (s && s[0].toUpperCase() + s.slice(1)) || ""
@@ -11,6 +11,7 @@ const firestoreFetch = async (filtro) =>{
         const queryCategoria =query(collection(db,"categoria"),where("nombre","==",capitalize(filtro.tipo).replaceAll('-',' ')));
         const datCategoria = await getDocs(queryCategoria);
         const categoriaRef=datCategoria.docs.map((item)=> {return item.ref});
+        
         
         const queryJuegos =query(collection(db,"juegos"),where("categoria","==",categoriaRef[0]));
         const datJuego = await getDocs(queryJuegos);
