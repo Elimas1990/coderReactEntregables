@@ -8,6 +8,7 @@ import saveOrder from "./utils/saveOrder"
 
 const Cart = () =>{
     const test = useContext(CartContext)
+    console.log(test)
     const [productos,setProductos] = useState([])
     useEffect(()=>{
         firestoreFetch({})
